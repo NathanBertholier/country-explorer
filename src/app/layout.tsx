@@ -1,3 +1,4 @@
+import Navbar from '@/components/NavBar'
 import './globals.css'
 export const metadata = {
   title: 'Next.js',
@@ -10,7 +11,11 @@ export default function RootLayout({
 }) {
   return (
     <html className='dark' lang="fr">
-      <body>{children}</body>
+
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }
