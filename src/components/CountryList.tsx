@@ -27,12 +27,12 @@ export default function CountryList() {
     const countryCardList = countries.filter((country) => country.capitalCity).map((country) => <CountryCard key={country.id} country={country} />)
 
     return (
-        <>
-            <div className="gap-2 grid grid-cols-2 sm:grid-cols-4">
+        <div className="mx-6">
+            <div className="gap-4 grid grid-cols-1 sm:grid-cols-4">
                 {countryCardList}
             </div>
-            <Pagination total={page.total} initialPage={page.initialPage} onChange={(index) => getCountries(index)} />
+            <Pagination className="flex justify-center m-2" total={page.total} initialPage={page.initialPage} onChange={(index) => getCountries(index)} />
 
-        </>
+        </div>
     )
 }

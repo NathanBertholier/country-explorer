@@ -5,7 +5,7 @@ const Map = dynamic(() => import('@/components/Map'), { ssr: false });
 
 export default function ContryCard({ country }: { country: Country }) {
     return (<div>
-        <Card className="py-4" >
+        <Card className=" py-2 shadow-lg" >
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                 <p className="text-tiny uppercase font-bold">{country.name}</p>
                 <small className="text-default-500">{country.region.value}</small>
