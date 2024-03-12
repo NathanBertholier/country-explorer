@@ -11,7 +11,7 @@ export default function ContryCard({ country }: { country: Country }) {
                 <small className="text-default-500">{country.region.value}</small>
                 <h4 className="font-bold text-large">{country.capitalCity}</h4>
             </CardHeader>
-            <CardBody className="overflow-visible py-2">
+            <CardBody className="py-2 z-0">
                 <Map country={country} />
             </CardBody>
         </Card>
